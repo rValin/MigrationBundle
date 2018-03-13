@@ -1,0 +1,9 @@
+services:
+    rvalin.migration.manager:
+        class: RValin\MigrationBundle\Manager\MigrationManager
+        arguments: ['@doctrine.orm.entity_manager']
+    rvalin.migration.provider:
+        class: RValin\MigrationBundle\Provider\MigrationProvider
+        arguments: ['@kernel', '@service_container']
+    rvalin.migration.generator:
+        class: RValin\MigrationBundle\Tools\MigrationGenerator

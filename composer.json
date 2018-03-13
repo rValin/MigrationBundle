@@ -1,0 +1,23 @@
+{
+    "homepage": "https://github.com/rValin/MigrationBundle",
+    "keywords": ["migration", "symfony"],
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "type": "library",
+    "name": "rvalin/migration-bundle",
+    "description": "a Symfony Bundle for migrations",
+    "require": {
+        "php": ">=5.3.9",
+        "symfony/symfony": ">=2.7"
+    },
+    "autoload": {
+        "psr-4": { "RValin\\MigrationBundle\\": "" }
+    },
+    "authors": [
+        {
+            "name": "Romain Valin",
+            "email": "romain.valin.web@gmail.com",
+            "homepage": "https://www.romain-valin.com"
+        }
+    ]
+}
