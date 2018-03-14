@@ -9,7 +9,7 @@ Installation
 
 1) Use [Composer](https://getcomposer.org/) to download the library
 ```
-composer require rvalin/migrationBundle
+composer require rvalin/migration-bundle
 ```
 
 
