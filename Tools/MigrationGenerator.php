@@ -78,6 +78,11 @@ class <migrationClassName> extends DefaultMigration
 
         $migrationFileName = $this->generateMigrationClassName($migrationName).'.php';
         $path = $bundle->getPath() . '/Migration/' . $migrationFileName;
+
+        if (file_exists($path)) {
+            throw new \InvalidArgumentException(sprintf('A file with the name %s already exists', $migrationFileName));
+        }
+
         $this->createClass($path, $content);
 
         return $path;
