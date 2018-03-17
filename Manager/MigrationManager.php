@@ -58,9 +58,9 @@ class MigrationManager
 
         $result = $migration->execute();
         if ($result || null === $result) {
-            $this->_output->writeln(sprintf('<info>Migration executed: %s</info>', $migration->getName()));
 
             if ($execute) {
+                $this->_output->writeln(sprintf('<info>Migration executed: %s</info>', $migration->getName()));
                 $this->saveMigrationExecuted($migration);
             }
         } else {
@@ -117,9 +117,9 @@ class MigrationManager
 
         $result = $migration->reverse();
         if ($result || null === $result) {
-            $this->_output->writeln(sprintf('<info>Migration reversed: %s</info>', $migration->getName()));
 
             if ($execute) {
+                $this->_output->writeln(sprintf('<info>Migration reversed: %s</info>', $migration->getName()));
                 $this->saveMigrationReversed($migration);
             }
         } else {

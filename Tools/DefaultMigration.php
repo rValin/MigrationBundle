@@ -107,7 +107,7 @@ abstract class DefaultMigration implements MigrationInterface
                 $commandStr .= ' ' . $key . '=' . $arg;
             }
         }
-        $this->_output->writeln(sprintf('<info>Execute command: $s</info>', $commandStr));
+        $this->_output->writeln(sprintf('<info>Execute command: %s</info>', $commandStr));
 
         $application = new Application($this->_container->get('kernel'));
         $application->setAutoExit(false);
