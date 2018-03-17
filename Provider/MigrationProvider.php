@@ -130,11 +130,11 @@ class MigrationProvider
             }
 
             // check the migration max version
-            if (null !== $filters['maxVersion'] && $migration->getMigrationVersion() > $filters['maxVersion']) {
+            if (null !== $filters['maxVersion'] && version_compare($migration->getMigrationVersion(), $filters['maxVersion'], '>')) {
                 continue;
             }
             // check the migration min version
-            if (null !== $filters['minVersion'] && $migration->getMigrationVersion() < $filters['minVersion']) {
+            if (null !== $filters['minVersion'] && version_compare($migration->getMigrationVersion(), $filters['minVersion'], '<')) {
                 continue;
             }
 
