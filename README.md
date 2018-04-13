@@ -13,7 +13,7 @@ composer require rvalin/migration-bundle
 ```
 
 
-2) Then add the WhiteOctoberPagerfantaBundle to your application kernel:
+2) Then add the RValinMigrationBundle to your application kernel:
 ```php
 // app/AppKernel.php
 public function registerBundles()
